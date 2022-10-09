@@ -1,0 +1,122 @@
+/* custom properties in CSS start with -- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/* the value for light */
+html {
+    --color-primary: rgb(0, 0, 0);
+    --color-secondary: rgb(224, 129, 129);
+    --color-secondary-m: hsla(0, 0%, 100%, 0.5);
+}
+
+html[data-theme="dark"] {
+    --color-primary: rgb(210, 125, 125);
+    --color-secondary: rgb(111, 107, 107);
+    --color-secondary-m: hsla(0, 0%, 0%, 0.5);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    background-image: url("godfather.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--color-primary);
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+    position: relative;
+    margin: 50px;
+}
+
+input:checked[type="checkbox"] {
+    background-color: aquamarine;
+}
+
+input:not(:checked)[type="checkbox"] {
+    background-color: rgb(254, 13, 113);
+}
+
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="checkbox"]::before {
+    left: 0.5rem;
+}
+
+input[type="checkbox"]::after {
+    right: 0.5rem;
+}
+
+input:checked[type="checkbox"]::before {
+    left: 0.5rem;
+}
+
+input[type="checkbox"]::after {
+    right: 0.5rem;
+}
+
+input:checked[type="checkbox"]::before {
+    left: 37%;
+    box-shadow: none;
+}
+
+input:checked[type="checkbox"]::after {
+    right: 38%;
+    box-shadow: none;
+}
+
+section {
+    padding: 50px;
+    background-color: var(--color-secondary-m);
+    transition: all 0.5s ease-in-out;
+}
+
+section h2 {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+section p {
+    color: var(--color-primary);
+    transition: all 0.5s ease-in-out;
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+    transition: all 0.5s !important;
+    transition-delay: 0 !important;
+}
