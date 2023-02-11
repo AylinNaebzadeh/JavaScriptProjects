@@ -1,0 +1,102 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 5px solid black;
+    margin-top: 2.5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* margin-bottom: 10%; */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #e8e4e4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.price {
+    font-size: 25px;
+    text-align: center;
+}
+
+.abservation {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.explanation {
+    padding-top: 5%;
+    text-align: center;
+}
+
+a:link {
+    /* margin-top: 15%; */
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+.list-header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.list-details {
+    list-style: square;
+    padding-left: 35px;
+}
+
+
+.add-cart {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-cart:hover {
+    color: black;
+    background-color: white;
+    border-top: 5px solid black;
+}
+
+.shoe-image {
+    display: block;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 50%;
+}
